@@ -17,6 +17,7 @@ $router->get('/', function () use ($router) {
 
 $router->get('/assignment1', 'AssignmentController@index');
 
-$router->post("/register", "AuthController@register");
-$router->post("/login", "AuthController@login"); 
-$router->get("/user", "UserController@index");
+$router->group(['prefix' => 'assignment2'], function () use ($router) {
+    $router->post("/register", "AuthController@register");
+	$router->post("/login", "AuthController@login");
+});
