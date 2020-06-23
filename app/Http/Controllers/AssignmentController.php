@@ -18,7 +18,7 @@ class AssignmentController extends Controller
     {
     	$X = array(3, 5, 12, 9, 5); 
 	
-		$Y = array(4, 11, 8, 5, 61); 
+		$Y = array(4, 11, 8, 5, 6); 
 	 	  
 		$n = sizeof($X);
 
