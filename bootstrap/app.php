@@ -23,9 +23,9 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+$app->withFacades();
 
-// $app->withEloquent();
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ $app = new Laravel\Lumen\Application(
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
+    App\Exceptions\Handler::class,
 );
 
 $app->singleton(
@@ -60,6 +60,7 @@ $app->singleton(
 */
 
 $app->configure('app');
+
 
 /*
 |--------------------------------------------------------------------------
